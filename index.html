@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator Application</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script type="text/javascript" src="assets/js/app.js"></script>
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="temporaryResult">
+                <strong id="temporaryResultStrong"></strong>
+            </div>
+            <div id="result">
+                <strong id="resultStrong">0</strong>
+            </div>
+            <div id="main">
+                <div id="first-rows">
+                    <button data-type="delete" class="del-bg delete">CE</button>
+                    <button value="C" data-type="deleteAll" class="del-bg deleteAll">C</button>
+                    <button value="%" data-type="operator" class="btn operator opera-bg fall-back">%</button>
+                    <button value="-/+" data-type="negative" class="btn opera-bg operator">+/- </button>
+                </div>
+
+                <div class="rows">
+                    <button value="7" data-type="number" class="btn num-bg">7</button>
+                    <button value="8" data-type="number" class="btn num-bg">8</button>
+                    <button value="9" data-type="number" class="btn num-bg">9</button>
+                    <button value="-" data-type="operator" class="btn opera-bg operator">-</button>
+                </div>
+
+                <div class="rows">
+                    <button value="4" data-type="number" class="btn num-bg">4</button>
+                    <button value="5" data-type="number" class="btn num-bg">5</button>
+                    <button value="6" data-type="number" class="btn num-bg">6</button>
+                    <button value="*" data-type="operator" class="btn opera-bg operator">x</button>
+                </div>
+
+                <div class="rows">
+                    <button value="1" data-type="number" class="btn num-bg">1</button>
+                    <button value="2" data-type="number" class="btn num-bg">2</button>
+                    <button value="3" data-type="number" class="btn num-bg">3</button>
+                    <button value="/" data-type="operator" class="btn opera-bg operator">/</button>
+                </div>
+
+                <div class="rows">
+                    <button value="0" data-type="number" class="btn num-bg zero">0</button>
+                    <button value="." data-type="period" class="btn opera-bg period operator">.</button>
+                    <button value="+" data-type="operator" class="btn opera-bg value align operator">+</button>
+                    <button value="=" data-type="equal" id="eqn-bg" class="eqn align">=</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
